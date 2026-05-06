@@ -1,0 +1,110 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input + button */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #4facfe;
+}
+
+/* Button */
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #4facfe;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #007bff;
+}
+
+/* Weather display */
+#weather {
+    margin-top: 15px;
+}
+
+#cityName {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#temp {
+    font-size: 28px;
+    color: #4facfe;
+    margin-bottom: 10px;
+}
+
+#description {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+#details {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Loading & error */
+#loading {
+    color: #4facfe;
+    font-weight: bold;
+}
+
+#error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
